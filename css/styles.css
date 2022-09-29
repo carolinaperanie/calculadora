@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.title{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Bungee Spice', cursive;
+    background-color: rgb(225, 221, 235);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 15px;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    font-size: 2rem;
+    border: 1px solid rgb(232, 25, 118);
+    text-shadow:  rgb(239, 237, 226) 1px 0 10px;
+}
+
+.calculator-display {
+    padding: 25px 15px;
+    width: 100%;
+    text-align: right;
+    border: 1px solid rgb(0, 0, 0);
+    overflow-x: auto;
+}
+
+.calculator-keypad {
+    display: flex;
+    width: 100%;
+}
+
+.keypad-numbers {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.keypad-button {
+    width: 25%;
+    padding: 15px 0;
+    text-align: center;
+    cursor: pointer;
+    background: rgb(138, 106, 183);
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.keypad-button:hover {
+    filter:brightness(80%);
+    transition: filter .25s;
+}
+
+.keypad-button.large {
+    width: 50%;
+}
+
+.keypad-button.dark {
+    background: rgb(138, 106, 183);
+}
+
+.keypad-button.yellow {
+    background: rgb(227, 152, 200);
+}
